@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    
+}
+
+.intro-wrapper {
+    text-align: center;
+    color: white;
+    
+}
+
+.story {
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+
+.vrchat-wrapper {
+    width: 40%;
+    margin: auto;
+    color: white;
+}
+
+.vrchat-wrapper > .a-room {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.vrchat-wrapper > .a-room > .a-room-text {
+    padding: 10px;
+    color: black;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.subtitles-wrapper {
+        
+
+}
+
+.button{
+    height: 100%;
+    display: inline-block;
+}
