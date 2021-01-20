@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MingLiU';
+    src: url('fonts/MingLiU.woff2') format('woff2'),
+        url('fonts/MingLiU.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'suisse_intlitalic';
+    src: url('fonts/suisseintl-regularitalic-webfont.woff2') format('woff2'),
+        url('fonts/suisseintl-regularitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'suisse_intllight';
+    src: url('fonts/suisseintl-light-webfont.woff2') format('woff2'),
+        url('fonts/suisseintl-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'suisse_intllight_italic';
+    src: url('fonts/suisseintl-lightitalic-webfont.woff2') format('woff2'),
+        url('fonts/suisseintl-lightitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'suisse_intlsemi_bold';
+    src: url('fonts/suisseintl-semibold-webfont.woff2') format('woff2'),
+        url('fonts/suisseintl-semibold-webfont.woff') format('woff');
+}
+
+
+.container {
+    animation: perspectiveAnimation 8s infinite ease-in-out;
+}
+
+@keyframes perspectiveAnimation {
+    0% {
+        perspective: 50px;
+    }
+    50% {
+        perspective: 100px;
+    }
+    100% {
+        perspective: 50px;
+    }
+}

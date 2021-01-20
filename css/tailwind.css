@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MingLiU';
+    src: url('../fonts/MingLiU.woff2') format('woff2'),
+        url('fonts/MingLiU.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'suisse_intlitalic';
+    src: url('../fonts/suisseintl-regularitalic-webfont.woff2') format('woff2'),
+        url('../fonts/suisseintl-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'suisse_intllight';
+    src: url('../fonts/suisseintl-light-webfont.woff2') format('woff2'),
+        url('../fonts/suisseintl-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'suisse_intllight_italic';
+    src: url('../fonts/suisseintl-lightitalic-webfont.woff2') format('woff2'),
+        url('../fonts/suisseintl-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'suisse_intlsemi_bold';
+    src: url('../fonts/suisseintl-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/suisseintl-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'suisse_regular';
+
+  src: url('../fonts/suisseintl-regular-webfont.woff2') format('woff2'),
+        url('../fonts/suisseintl-regular-webfont.woff') format('woff');
+}
+
+.font-mainSerif {
+  font-family: MingLiU;
+}
+
+.font-mainSans {
+  font-family: suisse_regular;
+}
+
+
+body {
+    
+}
+
+.container {
+    animation: perspectiveAnimation 8s infinite ease-in-out;
+}
+
+.child {
+    animation: rorateAnimation 15s infinite ease-in-out;
+
+}
+
+/*
+
+@keyframes perspectiveAnimation {
+    0% {
+        perspective: 50px;
+    }
+    50% {
+        perspective: 100px;
+    }
+    100% {
+        perspective: 50px;
+    }
+}
+
+@keyframes rorateAnimation{
+    0% {
+        transform: roateX(0deg);
+    }
+    25% {
+        transform: rotateX(25deg);
+    }
+    50%{
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+
+    }
+}
+*/
+
+.text-secondary {
+    color: #9190BE
+}
+
+.simulation {
+    animation: simulMove 15s infinite ease-in-out;
+}
+
+@keyframes simulMove {
+    0%, 100% {
+        filter: blur(0);
+    }
+    
+    70% {
+        margin-top: 0;
+        letter-spacing: 10px;
+        filter: blur(5px);
+
+    }
+
+}
+
+.cursor {
+    animation: cursorMove 40s infinite ease-in-out;
+}
+
+@keyframes cursorMove {
+    0%, 100% {
+        margin-left: 40%;
+    }
+    10% {
+        margin-left: 80%;
+        margin-top: -10%;
+    }
+    40% {
+        margin-left: 50%;
+        margin-top: 15%;
+    }
+    60% {
+        margin-left: 20%;
+        margin-top: -5%;
+    }
+    80% {
+        margin-left: 45%;
+        margin-top: -20%;
+    }
+}
+
+.intro-wrapper {
+    text-align: center;
+    font-family: 'MingLiU';
+    
+}
+
+.story {
+    margin: auto;
+}
+
+
+.vrchat-wrapper {
+    margin: auto;
+/*        transform: perspective(1000px) rotateY(45deg);*/
+
+}
+
+.vrchat-wrapper > .a-room {
+    border-radius: 20px;
+}
+
+.vrchat-wrapper > .a-room > .a-room-text {
+    padding: 10px;
+}
+
+.sub-title {
+}
+
+.subtitles-wrapper {
+        
+
+}
+
+.button{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
