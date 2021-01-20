@@ -59,7 +59,8 @@
 
 
 body {
-    
+    background: rgb(145,144,190);
+background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(145,144,190,1) 100%);
 }
 
 .container {
@@ -103,7 +104,7 @@ body {
 */
 
 .text-secondary {
-    color: #9190BE
+    color: #9190BE;
 }
 
 .simulation {
@@ -189,4 +190,8 @@ body {
     padding: 10px;
     color: black;
     border-radius: 10px;
+}
+
+.story {
+
 }
