@@ -43,24 +43,24 @@
 }
 
 @font-face {
-  font-family: 'suisse_regular';
+    font-family: 'suisse_regular';
 
-  src: url('../fonts/suisseintl-regular-webfont.woff2') format('woff2'),
+    src: url('../fonts/suisseintl-regular-webfont.woff2') format('woff2'),
         url('../fonts/suisseintl-regular-webfont.woff') format('woff');
 }
 
 .font-mainSerif {
-  font-family: MingLiU;
+    font-family: MingLiU;
 }
 
 .font-mainSans {
-  font-family: suisse_regular;
+    font-family: suisse_regular;
 }
 
 
 body {
-    background: rgb(145,144,190);
-background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(145,144,190,1) 100%);
+    background: rgb(145, 144, 190);
+    background: linear-gradient(90deg, rgba(145, 144, 190, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(145, 144, 190, 1) 100%);
 }
 
 .container {
@@ -112,10 +112,12 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 }
 
 @keyframes simulMove {
-    0%, 100% {
+
+    0%,
+    100% {
         filter: blur(0);
     }
-    
+
     70% {
         margin-top: 0;
         letter-spacing: 10px;
@@ -130,21 +132,27 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 }
 
 @keyframes cursorMove {
-    0%, 100% {
+
+    0%,
+    100% {
         margin-left: 40%;
     }
+
     10% {
         margin-left: 80%;
         margin-top: -10%;
     }
+
     40% {
         margin-left: 50%;
         margin-top: 15%;
     }
+
     60% {
         margin-left: 20%;
         margin-top: -5%;
     }
+
     80% {
         margin-left: 45%;
         margin-top: -20%;
@@ -154,7 +162,7 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 .intro-wrapper {
     text-align: center;
     font-family: 'MingLiU';
-    
+
 }
 
 .story {
@@ -164,7 +172,7 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 
 .vrchat-wrapper {
     margin: auto;
-/*        transform: perspective(1000px) rotateY(45deg);*/
+    /*        transform: perspective(1000px) rotateY(45deg);*/
 
 }
 
@@ -182,12 +190,13 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
     border: solid 1px #9190BE;
     padding: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: white;
 
 }
 
-.abstract-text {
-}
+.abstract-text {}
 
 .parent {
     perspective: 500px;
@@ -195,27 +204,27 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 }
 
 .child {
-    transform: rotatex(0deg) rotatey(5deg); 
+    transform: rotatex(0deg) rotatey(5deg);
     animation: anim1 3s infinite ease-in-out;
 
 }
 
 @keyframes anim1 {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) rotatex(-1deg) rotatey(3deg);
-  }
-  50% {
-    transform: translate3d(0, 5px, 0) rotatex(-1deg) rotatey(3deg);
-  }
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotatex(-1deg) rotatey(3deg);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0) rotatex(-1deg) rotatey(3deg);
+    }
 }
 
 
-.subtitles-wrapper {
-        
+.subtitles-wrapper {}
 
-}
-
-.button{
+.button {
     display: inline-block;
     margin-right: 10px;
     padding: 10px;
@@ -225,17 +234,15 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
 
 .border-solid {
     border-color: #9190BE;
-    
+
 
 }
 
 .box {
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border: solid 1px #9190BE;
+    border: solid 1px #9190BE;
 
 }
 
-.story {
-
-}
+.story {}
