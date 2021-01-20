@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kabk/go-theses-21-soyun-park#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.3",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",

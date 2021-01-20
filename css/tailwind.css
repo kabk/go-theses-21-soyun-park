@@ -176,8 +176,39 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
     padding: 10px;
 }
 
-.sub-title {
+.sub-titles {
+
+    border-radius: 10px;
+    border: solid 1px #9190BE;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+
 }
+
+.abstract-text {
+}
+
+.parent {
+    perspective: 500px;
+
+}
+
+.child {
+    transform: rotatex(0deg) rotatey(5deg); 
+    animation: anim1 3s infinite ease-in-out;
+
+}
+
+@keyframes anim1 {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotatex(-1deg) rotatey(3deg);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0) rotatex(-1deg) rotatey(3deg);
+  }
+}
+
 
 .subtitles-wrapper {
         
@@ -190,6 +221,19 @@ background: linear-gradient(90deg, rgba(145,144,190,1) 0%, rgba(255,255,255,1) 1
     padding: 10px;
     color: black;
     border-radius: 10px;
+}
+
+.border-solid {
+    border-color: #9190BE;
+    
+
+}
+
+.box {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: solid 1px #9190BE;
+
 }
 
 .story {

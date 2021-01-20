@@ -41,10 +41,17 @@
     0% {
         perspective: 50px;
     }
+
     50% {
         perspective: 100px;
     }
+
     100% {
         perspective: 50px;
     }
+}
+
+.sub-titles {
+    background: rgb(145, 144, 190);
+    background: radial-gradient(circle, rgba(145, 144, 190, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(145, 144, 190, 1) 100%);
 }
