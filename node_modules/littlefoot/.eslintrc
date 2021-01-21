@@ -1,0 +1,14 @@
+{
+  "extends": ["@pacote/eslint-config", "plugin:cypress/recommended"],
+  "plugins": ["cypress"],
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "cypress/globals": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  }
+}

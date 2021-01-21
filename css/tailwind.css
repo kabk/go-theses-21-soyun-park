@@ -135,10 +135,11 @@ body {
 
     0%,
     100% {
-        margin-left: 40%;
+        margin-left: 50%;
+        margin-top: -25%;
     }
 
-    10% {
+    20% {
         margin-left: 80%;
         margin-top: -10%;
     }
@@ -165,10 +166,6 @@ body {
 
 }
 
-.story {
-    margin: auto;
-}
-
 
 .vrchat-wrapper {
     margin: auto;
@@ -187,27 +184,42 @@ body {
 .sub-titles {
 
     border-radius: 10px;
-    border: solid 1px #9190BE;
     padding: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background: white;
 
 }
 
 .abstract-text {}
 
-.parent {
+.parent1 {
     perspective: 500px;
 
 }
 
-.child {
+.child1 {
+    /*
     transform: rotatex(0deg) rotatey(5deg);
         -webkit-transform: rotatex(0deg) rotatey(5deg);
     -moz-transform: rotatex(0deg) rotatey(5deg);
+*/
     animation: anim1 3s infinite;
+
+}
+
+.parent2 {
+    perspective: 800px;
+
+}
+
+.child2 {
+    /*
+    transform: rotatex(0deg) rotatey(-5deg);
+        -webkit-transform: rotatex(0deg) rotatey(-5deg);
+    -moz-transform: rotatex(0deg) rotatey(-5deg);
+*/
+    animation: anim2 4s infinite;
 
 }
 
@@ -215,13 +227,26 @@ body {
 
     0%,
     100% {
-        transform: translate3d(0, 0, 0) rotatex(-1deg) rotatey(3deg);
+        transform: translate3d(0, 0, 0) rotatex(0deg) rotatey(2deg);
     }
 
     60% {
-        transform: translate3d(0, 5px, 0) rotatex(-1deg) rotatey(3deg);
+        transform: translate3d(0, 5px, 0) rotatex(-1deg) rotatey(2deg);
     }
 }
+
+@keyframes anim2 {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotatex(1deg) rotatey(-3deg);
+    }
+
+    60% {
+        transform: translate3d(0, 5px, 0) rotatex(0deg) rotatey(-3deg);
+    }
+}
+
 
 
 .subtitles-wrapper {}
@@ -243,8 +268,17 @@ body {
 .box {
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: solid 1px #9190BE;
 
 }
 
-.story {}
+.imgBox {
+    display: inline-block;
+    overflow: hidden !important;
+    transition: .3s ease-in-out;
+
+}
+
+.imgBox:hover {
+    filter: alpha(opacity=30);
+    transform: scale(1.6);
+}
