@@ -196,7 +196,7 @@ body {
 
 .parent1 {
     perspective: 500px;
-
+    transition: .3s ease-in-out;
 }
 
 .child1 {
@@ -211,6 +211,7 @@ body {
 
 .parent2 {
     perspective: 800px;
+    transition: .3s ease-in-out;
 
 }
 
@@ -221,6 +222,7 @@ body {
     -moz-transform: rotatex(0deg) rotatey(-5deg);
 */
     animation: anim2 4s infinite;
+    transition: .3s ease-in-out;
 
 }
 
@@ -281,5 +283,17 @@ body {
 
 .imgBox:hover {
     transform: scale(1.2);
-   filter: drop-shadow(0px 0px 20px #9190BE);
+    filter: drop-shadow(0px 0px 20px #9190BE);
+}
+
+.abstractText {
+    display: none;
+}
+
+.vrchatText {
+    display: none;
+}
+
+.introText{
+    display: none;
 }
