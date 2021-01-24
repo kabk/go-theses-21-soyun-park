@@ -75,31 +75,31 @@ body {
 /*
 
 @keyframes perspectiveAnimation {
-    0% {
-        perspective: 50px;
-    }
-    50% {
-        perspective: 100px;
-    }
-    100% {
-        perspective: 50px;
-    }
+0% {
+perspective: 50px;
+}
+50% {
+perspective: 100px;
+}
+100% {
+perspective: 50px;
+}
 }
 
 @keyframes rorateAnimation{
-    0% {
-        transform: roateX(0deg);
-    }
-    25% {
-        transform: rotateX(25deg);
-    }
-    50%{
-        transform: rotateX(180deg);
-    }
-    100% {
-        transform: rotateX(0deg);
+0% {
+transform: roateX(0deg);
+}
+25% {
+transform: rotateX(25deg);
+}
+50%{
+transform: rotateX(180deg);
+}
+100% {
+transform: rotateX(0deg);
 
-    }
+}
 }
 */
 
@@ -192,9 +192,14 @@ body {
 
 }
 
+.border-radius {
+    border-radius: 20px;
+
+}
+
 .vrchat {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 10px;
+    border-radius: 10px;
 
 }
 
@@ -208,9 +213,9 @@ body {
 .child1 {
     /*
     transform: rotatex(0deg) rotatey(5deg);
-        -webkit-transform: rotatex(0deg) rotatey(5deg);
+    -webkit-transform: rotatex(0deg) rotatey(5deg);
     -moz-transform: rotatex(0deg) rotatey(5deg);
-*/
+    */
     animation: anim1 3s infinite;
 
 }
@@ -224,29 +229,33 @@ body {
 .child2 {
     /*
     transform: rotatex(0deg) rotatey(-5deg);
-        -webkit-transform: rotatex(0deg) rotatey(-5deg);
+    -webkit-transform: rotatex(0deg) rotatey(-5deg);
     -moz-transform: rotatex(0deg) rotatey(-5deg);
-*/
+    */
     animation: anim2 4s infinite;
     transition: .3s ease-in-out;
 
 }
 
 .parent3 {
-    perspective: 2000px;
-    transition: .3s ease-in-out;
+    perspective: 15000px;
+    transition: .4s ease-in-out;
 
 }
 
 .child3 {
-    /*
-    transform: rotatex(0deg) rotatey(-5deg);
-        -webkit-transform: rotatex(0deg) rotatey(-5deg);
-    -moz-transform: rotatex(0deg) rotatey(-5deg);
-*/
-/*    animation: anim2 4s infinite;*/
-/*    transition: .3s ease-in-out;*/
 
+    transform: rotatex(0deg) rotatey(-9deg);
+    -webkit-transform: rotatex(0deg) rotatey(-9deg);
+    -moz-transform: rotatex(0deg) rotatey(-9deg);
+
+    animation: anim2 5s infinite;
+    transition: .5s ease-in-out;
+
+}
+
+.parent-biblio {
+    perspective: 500px;
 }
 
 @keyframes anim1 {
@@ -292,14 +301,13 @@ body {
 }
 
 .box {
-    border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .purple-shadow {
     box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
--webkit-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
--moz-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
+    -webkit-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
+    -moz-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
 }
 
 .imgBox {
@@ -312,6 +320,18 @@ body {
 .imgBox:hover {
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 20px #9190BE);
+}
+
+.hover-shiny:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+    box-shadow: 0px 0px 15px 5px #000000;
+
+}
+
+.hover-light:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px #FFFFFF; 
+    box-shadow: 0px 0px 15px 5px #FFFFFF;
+
 }
 
 
@@ -384,5 +404,21 @@ body {
 }
 
 .sonicText {
+    display: none;
+}
+
+.bondingText {
+    display: none;
+}
+
+.conclusionText {
+    display: none;
+}
+
+.storyText {
+    display: none;
+}
+
+.biblioText {
     display: none;
 }
