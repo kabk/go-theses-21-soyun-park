@@ -192,6 +192,12 @@ body {
 
 }
 
+.vrchat {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+
+}
+
 .abstract-text {}
 
 .parent1 {
@@ -223,6 +229,23 @@ body {
 */
     animation: anim2 4s infinite;
     transition: .3s ease-in-out;
+
+}
+
+.parent3 {
+    perspective: 2000px;
+    transition: .3s ease-in-out;
+
+}
+
+.child3 {
+    /*
+    transform: rotatex(0deg) rotatey(-5deg);
+        -webkit-transform: rotatex(0deg) rotatey(-5deg);
+    -moz-transform: rotatex(0deg) rotatey(-5deg);
+*/
+/*    animation: anim2 4s infinite;*/
+/*    transition: .3s ease-in-out;*/
 
 }
 
@@ -271,7 +294,12 @@ body {
 .box {
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.purple-shadow {
+    box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
+-webkit-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
+-moz-box-shadow: 0px 0px 19px rgba(145,144,190,0.6);
 }
 
 .imgBox {
@@ -286,6 +314,7 @@ body {
     filter: drop-shadow(0px 0px 20px #9190BE);
 }
 
+
 .abstractText {
     display: none;
 }
@@ -295,5 +324,65 @@ body {
 }
 
 .introText{
+    display: none;
+}
+
+.roomText {
+    display: none;
+}
+
+.mirrorText {
+    display: none;
+}
+
+.courtText {
+    display: none;
+}
+
+.voidText{
+    display: none;
+}
+
+.railwayText {
+    display: none;
+}
+
+.secondlifeText {
+    display: none;
+}
+
+.avatarText {
+    display: none;
+}
+
+.adultText {
+    display: none;
+}
+
+.movementText {
+    display: none;
+}
+
+.familiarText {
+    display: none;
+}
+
+.collisionText {
+    display: none;
+}
+
+.resemblanceText {
+    display: none;
+}
+
+.bodiesText {
+    display: none;
+}
+
+.spaceText {
+    display: none;
+}
+
+.sonicText {
     display: none;
 }
