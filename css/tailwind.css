@@ -334,6 +334,15 @@ transform: rotateX(0deg);
 
 }
 
+.hover-dark:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px #686868; 
+    box-shadow: 0px 0px 15px 5px #686868;
+}
+
+.littlefoot-footnote__content {
+    font-size: 10pt !important;
+}
+
 
 .abstractText {
     display: none;
